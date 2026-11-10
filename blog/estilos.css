@@ -83,3 +83,43 @@ footer a{color:var(--navy-fg)}
 .fab{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));width:56px;height:56px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 8px 24px rgba(15,90,50,.35);z-index:20}
 .fab svg{width:30px;height:30px}
 @media (max-width:520px){.top nav a.hide-sm{display:none}}
+.figure{margin:22px 0;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px}
+.figure figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+.tl{width:100%;height:auto;display:block}
+.tl-grid line{stroke:var(--line);stroke-width:1}
+.tl-axis text{fill:var(--muted);font:600 12.5px var(--body)}
+.tl-b1{fill:var(--ok)} .tl-b2{fill:var(--gold)} .tl-b3{fill:#f2a900}
+.tl-cap{fill:var(--fg);font:600 13.5px var(--body)}
+.tl-mark{stroke:var(--fg);stroke-width:2;stroke-dasharray:4 4}
+.tl-markt{fill:var(--fg);font:700 14px var(--body)}
+.tbl{overflow-x:auto;margin:12px 0}
+table.law{width:100%;border-collapse:collapse;font-size:15.5px}
+table.law th{text-align:left;font-family:var(--display);font-size:16px;color:var(--muted);padding:8px;border-bottom:2px solid var(--line)}
+table.law td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.law td:first-child{width:36%}
+table.law .art{display:block;font-size:13px;color:var(--gold-ink);font-weight:600;margin-top:2px}
+.vac{display:grid;gap:6px;margin:12px 0}
+.vac-row{display:grid;grid-template-columns:7.5em 1fr 2.5em;align-items:center;gap:8px;font-size:15px}
+.vac-row i{display:block;height:16px;border-radius:4px;background:var(--gold);width:calc(var(--d) / 24 * 100%)}
+.vac-row b{font-variant-numeric:tabular-nums;text-align:right}
+.calc-box{background:var(--surface);border:2px solid var(--gold);border-radius:var(--r);padding:18px;margin:28px 0}
+.calc-box h2{margin-top:0}
+.calc-grid{display:grid;gap:12px;margin:14px 0}
+@media (min-width:620px){.calc-grid{grid-template-columns:1fr 1fr}}
+.f{display:grid;gap:4px;min-width:0}
+.f label{font-size:14px;font-weight:600;color:var(--muted)}
+.f input,.f select{font:inherit;font-size:16px;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--bg);color:var(--fg);width:100%}
+.f input:focus,.f select:focus{outline:none;border-color:var(--gold)}
+.calc-total{display:grid;gap:2px;background:var(--gold-soft);border-radius:12px;padding:14px}
+.calc-total span{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.calc-total b{font-family:var(--display);font-size:40px;line-height:1.05;font-variant-numeric:tabular-nums}
+.calc-total small{font-size:14px;color:var(--muted)}
+.calc-bar{display:flex;height:14px;border-radius:99px;overflow:hidden;margin:12px 0;background:var(--surface-2)}
+.calc-bar span{display:block;height:100%}
+.calc-table{width:100%;border-collapse:collapse;font-size:15px}
+.calc-table td,.calc-table th{padding:8px 4px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.calc-table td:first-child{width:18px}
+.calc-table td i{display:block;width:12px;height:12px;border-radius:3px;margin-top:5px}
+.calc-table th span{display:block;font-weight:600}
+.calc-table th small{display:block;font-weight:400;color:var(--muted);font-size:13px}
+.calc-table .n{text-align:right;font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
