@@ -21,7 +21,7 @@ module.exports = async (req, res) => {
         texto: clean(b.texto, 500),
         t: Date.now()
       };
-      if (op.nombre.length < 2 || op.texto.length < 10 || !Number(b.estrellas)) return res.status(400).json({ error: "invalid" });
+      if (op.nombre.length < 2 || op.texto.length < 3 || !Number(b.estrellas)) return res.status(400).json({ error: "invalid" });
       // Una opinión por minuto por persona
       const ok = await redis(["SET", "pda:rl:op:" + clientIp(req), "1", "EX", "60", "NX"]);
       if (!ok) return res.status(429).json({ error: "rate_limited" });
