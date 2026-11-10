@@ -123,3 +123,22 @@ table.law .art{display:block;font-size:13px;color:var(--gold-ink);font-weight:60
 .calc-table th span{display:block;font-weight:600}
 .calc-table th small{display:block;font-weight:400;color:var(--muted);font-size:13px}
 .calc-table .n{text-align:right;font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
+.util{margin:30px 0 0;padding:18px;border-radius:var(--r);background:var(--surface);border:1px solid var(--line);text-align:center}
+.util-t{margin:0 0 10px;font-family:var(--display);font-size:22px;font-weight:700}
+.util-btns{display:flex;gap:10px;justify-content:center}
+.util-btns button{display:inline-flex;align-items:center;gap:8px;font:600 16px var(--body);padding:10px 20px;border-radius:99px;border:1.5px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer}
+.util-btns button svg{width:20px;height:20px;fill:currentColor}
+.util-btns button:hover{border-color:var(--gold)}
+.util-btns button[data-v="si"][aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:#fff}
+.util-btns button[data-v="no"][aria-pressed="true"]{background:var(--muted);border-color:var(--muted);color:var(--bg)}
+.util-res{min-height:1.4em;margin:10px 0 0;font-size:15px;color:var(--muted)}
+.util-follow{margin-top:10px;padding-top:12px;border-top:1px dashed var(--line)}
+.util-follow .util-q{margin:0 0 10px;font-weight:600}
+.util-follow .row{display:flex;justify-content:center}
+.cal-t{fill:var(--fg);font:700 18px var(--display)}
+.cal-h{fill:var(--muted);font:700 13px var(--body)}
+.cal-d{fill:var(--surface-2)}
+.cal-late{fill:var(--line);opacity:.55}
+.cal-last{fill:#f2a900}
+.cal-n{fill:var(--fg);font:600 14px var(--body)}
+.cal-n-w{fill:#14213a;font-weight:800}
